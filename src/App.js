@@ -5,10 +5,8 @@ import { Box, Typography, Paper } from "@material-ui/core";
 
 function App() {
 	return (
-		<Box>
-			<Paper>
-        
-      </Paper>
+		<Box className="home-page">
+			<Paper></Paper>
 		</Box>
 	);
 }
