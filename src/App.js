@@ -32,8 +32,11 @@ function App() {
 					<Typography className="cascadia" id="brian-keefe" variant="h2">
 						Brian Keefe
 					</Typography>
-					<Typography className="cascadia" variant="h4">
-						Developer
+					<Typography className="cascadia margin-top" variant="h5">
+						Junior Developer
+					</Typography>
+					<Typography className="cascadia" variant="p">
+						Staples INC., Framingham MA
 					</Typography>
 					<Button color="secondary" variant="contained" id="work-button">
 						See Work
