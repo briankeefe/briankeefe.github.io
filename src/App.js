@@ -1,13 +1,38 @@
+import "./style.scss";
 import React from "react";
 import logo from "./logo.svg";
-import { Box, Typography, Paper } from "@material-ui/core";
+import {
+	Box,
+	Typography,
+	Paper,
+	Grid,
+	AppBar,
+	Toolbar,
+	Button
+} from "@material-ui/core";
 import { blue } from "@material-ui/core/colors";
-import "style.scss";
+import space from "./images/space.jpg";
 
 function App() {
 	return (
-		<Box className="home-page" style={{ backgroundColor: blue[100] }}>
-			<Paper></Paper>
+		<Box className="home-page" style={{ backgroundImage: `url(${space})` }}>
+			<AppBar className="AppBar" position="static">
+				<Toolbar style={{ flexGrow: "1" }}>
+					<Box style={{ flexGrow: "1" }} />
+					<Button>Github</Button>
+					<Button>Social</Button>
+					<Button>Projects</Button>
+				</Toolbar>
+			</AppBar>
+			<Box className="outer">
+				<Grid container justify="center">
+					<Grid item>
+						<Typography id="brian-keefe" variant="h2">
+							Brian Keefe - Developer
+						</Typography>
+					</Grid>
+				</Grid>
+			</Box>
 		</Box>
 	);
 }

@@ -1,4 +1,29 @@
 .home-page {
 	height: 100vh;
 	width: 100vw;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	.outer {
+		padding: 16px;
+		.MuiPaper-root {
+			height: 90vh;
+			width: 100%;
+		}
+		padding-top: 96px;
+	}
+	#brian-keefe {
+		color: white;
+		opacity: 50%;
+	}
+	.MuiAppBar-root {
+		background: transparent;
+		box-shadow: none;
+	}
+
+	.AppBar {
+		.MuiButton-root {
+			color: white;
+		}
+	}
 }
