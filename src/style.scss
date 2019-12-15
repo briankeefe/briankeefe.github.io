@@ -15,7 +15,6 @@
 	.cascadia {
 		color: white;
 		font-family: "Cascadia Code";
-		opacity: 60%;
 		text-align: center;
 	}
 	.MuiAppBar-root {
@@ -38,5 +37,10 @@
 	}
 	.white-text {
 		color: white;
+	}
+	#buttons {
+		.MuiButton-root {
+			border-color: white;
+		}
 	}
 }
