@@ -35,7 +35,7 @@ function App() {
 					<Button color="secondary" variant="contained" id="work-button">
 						See Work
 					</Button>
-					<Grid item xs={4} align="center">
+					<Grid item xs={10} sm={8} md={6} lg={4}>
 						<Typography variant="h5" className="white-text about-text cascadia">
 							"Highly motivated developer focused on ReactJS, .NET, and full
 							stack solutions"
