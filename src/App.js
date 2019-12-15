@@ -25,20 +25,22 @@ function App() {
 				</Toolbar>
 			</AppBar>
 			<Box className="outer">
-				<Grid container justify="center">
-					<Grid item xs={12}>
-						<Typography className="cascadia" id="brian-keefe" variant="h2">
-							Brian Keefe
-						</Typography>
-					</Grid>
-					<Grid item xs={12}>
-						<Typography className="cascadia" variant="h4">
-							Developer
-						</Typography>
-					</Grid>
+				<Grid container justify="center" direction="column" alignItems="center">
+					<Typography className="cascadia" id="brian-keefe" variant="h2">
+						Brian Keefe
+					</Typography>
+					<Typography className="cascadia" variant="h4">
+						Developer
+					</Typography>
 					<Button color="secondary" variant="contained" id="work-button">
 						See Work
 					</Button>
+					<Grid item xs={4} align="center">
+						<Typography variant="h5" className="white-text about-text cascadia">
+							"Highly motivated developer focused on ReactJS, .NET, and full
+							stack solutions"
+						</Typography>
+					</Grid>
 				</Grid>
 			</Box>
 		</Box>
