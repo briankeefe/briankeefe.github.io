@@ -20,8 +20,8 @@ let TopBar = () => {
 					<Link className="link" to="/">
 						<Button>Home</Button>
 					</Link>
-					<Link className="link" to="/resume">
-						<Button>Resume</Button>
+					<Link className="link" to="/about">
+						<Button>About</Button>
 					</Link>
 					<Button href="http://www.github.com/briankeefe">Github</Button>
 					<Link className="link" to="/projects">

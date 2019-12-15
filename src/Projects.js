@@ -24,7 +24,7 @@ let ProjectPage = () => {
 								<CardContent className="box">
 									<Box pr={4}>
 										<Typography variant="h4">{e.name}</Typography>
-										<Typography variant="p">
+										<Typography style={{ marginTop: "8px" }} variant="body1">
 											Technology Used: <b>{e.tech}</b>
 										</Typography>
 										<Box mt={1} />
