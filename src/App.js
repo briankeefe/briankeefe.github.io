@@ -13,20 +13,12 @@ import {
 } from "@material-ui/core";
 import { blue } from "@material-ui/core/colors";
 import space from "./images/space.jpg";
+import TopBar from "./layout/TopBar";
 
 function App() {
 	return (
 		<Box className="home-page" style={{ backgroundImage: `url(${space})` }}>
-			<AppBar className="AppBar" position="static">
-				<Toolbar style={{ flexGrow: "1" }}>
-					<Box style={{ flexGrow: "1" }} />
-					<ButtonGroup id="buttons" variant="text">
-						<Button>Github</Button>
-						<Button>Social</Button>
-						<Button>Projects</Button>
-					</ButtonGroup>
-				</Toolbar>
-			</AppBar>
+			<TopBar />
 			<Box className="outer">
 				<Grid container justify="center" direction="column" alignItems="center">
 					<Typography className="cascadia" id="brian-keefe" variant="h2">
