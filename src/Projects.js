@@ -7,12 +7,14 @@ let ProjectPage = () => {
 	return (
 		<Box className="projects-page" style={{ backgroundColor: green[100] }}>
 			<TopBar />
-			<Grid container justify="center" direction="column" alignItems="center">
-				<Grid item xs={12} sm={10} md={6}>
-					<Card>
-						<CardContent>
-							<SimpleSlider />
-						</CardContent>
+			<Grid container justify="center">
+				<Grid item xs={12} sm={9} md={6}>
+					<Card style={{ height: "60vh" }}>
+						<Grid container justify="center">
+							<Box style={{ height: "30vh", width: "30vw" }}>
+								<SimpleSlider />
+							</Box>
+						</Grid>
 					</Card>
 				</Grid>
 			</Grid>

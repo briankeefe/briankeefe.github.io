@@ -64,4 +64,8 @@
 			color: black;
 		}
 	}
+
+	.slick-next:before, .slick-prev:before {
+		color: #000;
+	}
 }
