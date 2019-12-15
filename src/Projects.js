@@ -21,13 +21,11 @@ let ProjectPage = () => {
 				return (
 					<Grid container justify="center">
 						<Grid item xs={12} md={6}>
-							<Paper className="project-card">
-								<Box className="box">
-									<Grid container justify="center">
-										<Typography variant="h5">{e}</Typography>
-									</Grid>
-								</Box>
-							</Paper>
+							<Card className="project-card">
+								<CardContent className="box">
+									<Typography variant="h5">{e}</Typography>
+								</CardContent>
+							</Card>
 						</Grid>
 					</Grid>
 				);

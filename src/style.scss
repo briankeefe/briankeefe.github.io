@@ -32,10 +32,6 @@
 	.margin-top {
 		margin-top: 16px;
 	}
-	.MuiAppBar-root {
-		background: transparent;
-		box-shadow: none;
-	}
 
 	.AppBar {
 		.MuiButton-root {
@@ -45,6 +41,11 @@
 	.MuiButtonGroup-groupedText {
 		border-color: white !important;
 	}
+}
+
+.MuiAppBar-root {
+	background: transparent !important;
+	box-shadow: none !important;
 }
 
 .link {
@@ -81,4 +82,9 @@
 		flex-grow: 1;
 		width: 100%;
 	}
+}
+
+.resume-page {
+	min-height: 100vh;
+	width: 100vw;
 }

@@ -6,10 +6,12 @@ import * as serviceWorker from "./serviceWorker";
 import { Route, Link, BrowserRouter as Router } from "react-router-dom";
 import CopyApp from "./CopyApp.js";
 import Projects from "./Projects.js";
+import Resume from "./Resume.js";
 const routing = (
 	<Router>
 		<div>
 			<Route exact path="/" component={App} />
+			<Route path="/resume" component={Resume} />
 			<Route path="/projects" component={Projects} />
 		</div>
 	</Router>
