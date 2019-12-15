@@ -12,9 +12,11 @@
 		}
 		padding-top: 96px;
 	}
-	#brian-keefe {
+	.cascadia {
 		color: white;
-		opacity: 50%;
+		font-family: "Cascadia Code";
+		opacity: 60%;
+		text-align: center;
 	}
 	.MuiAppBar-root {
 		background: transparent;
@@ -25,5 +27,9 @@
 		.MuiButton-root {
 			color: white;
 		}
+	}
+	#work-button {
+		color: white;
+		margin-top: 24px;
 	}
 }

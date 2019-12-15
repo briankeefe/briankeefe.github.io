@@ -26,11 +26,19 @@ function App() {
 			</AppBar>
 			<Box className="outer">
 				<Grid container justify="center">
-					<Grid item>
-						<Typography id="brian-keefe" variant="h2">
-							Brian Keefe - Developer
+					<Grid item xs={12}>
+						<Typography className="cascadia" id="brian-keefe" variant="h2">
+							Brian Keefe
 						</Typography>
 					</Grid>
+					<Grid item xs={12}>
+						<Typography className="cascadia" variant="h4">
+							Developer
+						</Typography>
+					</Grid>
+					<Button color="secondary" variant="contained" id="work-button">
+						See Work
+					</Button>
 				</Grid>
 			</Box>
 		</Box>
