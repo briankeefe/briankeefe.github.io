@@ -29,11 +29,6 @@
 	.white-text {
 		color: white;
 	}
-	#buttons {
-		.MuiButton-root {
-			border-color: white;
-		}
-	}
 	.margin-top {
 		margin-top: 16px;
 	}
@@ -47,6 +42,13 @@
 			color: white;
 		}
 	}
+	.MuiButtonGroup-groupedText {
+		border-color: white !important;
+	}
+}
+
+.link {
+	text-decoration: none;
 }
 
 .projects-page {

@@ -9,6 +9,7 @@ import {
 	Button,
 	ButtonGroup
 } from "@material-ui/core";
+import { Link } from "react-router-dom";
 
 let TopBar = () => {
 	return (
@@ -16,9 +17,14 @@ let TopBar = () => {
 			<Toolbar style={{ flexGrow: "1" }}>
 				<Box style={{ flexGrow: "1" }} />
 				<ButtonGroup id="buttons" variant="text">
+					<Link className="link" to="/">
+						<Button>Home</Button>
+					</Link>
+
 					<Button>Github</Button>
-					<Button>Social</Button>
-					<Button>Projects</Button>
+					<Link className="link" to="/projects">
+						<Button>Projects</Button>
+					</Link>
 				</ButtonGroup>
 			</Toolbar>
 		</AppBar>
