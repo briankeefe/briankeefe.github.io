@@ -21,7 +21,7 @@ let TopBar = () => {
 						<Button>Home</Button>
 					</Link>
 
-					<Button>Github</Button>
+					<Button href="http://www.github.com/briankeefe">Github</Button>
 					<Link className="link" to="/projects">
 						<Button>Projects</Button>
 					</Link>

@@ -52,7 +52,7 @@
 }
 
 .projects-page {
-	height: 100vh;
+	min-height: 100vh;
 	width: 100vw;
 	.MuiAppBar-root {
 		background: transparent;
@@ -65,7 +65,8 @@
 		}
 	}
 
-	.slick-next:before, .slick-prev:before {
+	.slick-next:before,
+	.slick-prev:before {
 		color: #000;
 	}
 }

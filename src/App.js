@@ -14,6 +14,7 @@ import {
 import { blue } from "@material-ui/core/colors";
 import space from "./images/space.jpg";
 import TopBar from "./layout/TopBar";
+import { Link } from "react-router-dom";
 
 function App() {
 	return (
@@ -30,9 +31,12 @@ function App() {
 					<Typography className="cascadia" variant="p">
 						Staples INC., Framingham MA
 					</Typography>
-					<Button color="secondary" variant="contained" id="work-button">
-						See Work
-					</Button>
+					<Link className="link" to="/projects">
+						<Button color="secondary" variant="contained" id="work-button">
+							See Work
+						</Button>
+					</Link>
+
 					<Grid item xs={10} sm={8} md={6} lg={4}>
 						<Typography variant="h5" className="white-text about-text cascadia">
 							"Highly motivated developer focused on ReactJS, .NET, and full
