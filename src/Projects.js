@@ -10,20 +10,26 @@ import {
 import { green } from "@material-ui/core/colors";
 import TopBar from "./layout/TopBar";
 import SimpleSlider from "./SimpleSlider";
-
-let projectNames = ["Flashcards", "Snowday", "Sample Coding"];
+import ProjectContent from "./content/projectContent";
 
 let ProjectPage = () => {
 	return (
 		<Box className="projects-page" style={{ backgroundColor: green[100] }}>
 			<TopBar />
-			{projectNames.map(e => {
+			{ProjectContent.map(e => {
 				return (
 					<Grid container justify="center">
 						<Grid item xs={12} md={6}>
 							<Card className="project-card">
 								<CardContent className="box">
-									<Typography variant="h5">{e}</Typography>
+									<Box pr={4}>
+										<Typography variant="h4">{e.name}</Typography>
+										<Typography variant="p">
+											Technology Used: <b>{e.tech}</b>
+										</Typography>
+										<Box mt={1} />
+										<Typography variant="p">{e.desc}</Typography>
+									</Box>
 								</CardContent>
 							</Card>
 						</Grid>
