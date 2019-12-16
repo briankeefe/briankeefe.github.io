@@ -1,5 +1,5 @@
 @font-face {
-	font-family: "CascadiaCode";
+	font-family: "Cascadia";
 	src: local("Cascadia Code"), local("Cascadia"), local("CascadiaCode"),
 		url("./fonts/Cascadia.ttf") format("truetype");
 }
@@ -104,6 +104,6 @@
 
 .cascadia {
 	color: black;
-	font-family: "CascadiaCode" !important;
+	font-family: "Cascadia" !important;
 	text-align: center;
 }
