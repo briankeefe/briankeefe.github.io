@@ -3,6 +3,7 @@ import { Box, Typography, Grid, Card, CardContent } from "@material-ui/core";
 import { blue } from "@material-ui/core/colors";
 import TopBar from "./layout/TopBar";
 import internships from "./content/internships";
+import Profile from "./images/Burger.jpg";
 let AboutPage = () => {
 	return (
 		<Box className="about-page" style={{ backgroundColor: blue[50] }}>
@@ -33,11 +34,15 @@ let AboutPage = () => {
 								<Grid container justify="center" alignItems="center">
 									<Box
 										style={{
-											backgroundColor: "black",
 											height: "200px",
 											width: "200px"
 										}}
-									></Box>
+									>
+										<img
+											style={{ height: "inherit", width: "inherit" }}
+											src={Profile}
+										/>
+									</Box>
 								</Grid>
 							</CardContent>
 						</Card>
