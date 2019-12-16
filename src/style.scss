@@ -49,7 +49,8 @@
 	#brian-keefe {
 		mix-blend-mode: screen;
 		background-color: white;
-		color: black;
+		color: black !important;
+		opacity: 50%;
 	}
 }
 
