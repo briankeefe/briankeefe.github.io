@@ -7,7 +7,7 @@ import { Route, Switch, HashRouter as Router } from "react-router-dom";
 import CopyApp from "./CopyApp.js";
 import Projects from "./Projects.js";
 import About from "./About.js";
-import "./fonts/Cascadia";
+import "./fonts/Cascadia.ttf";
 const routing = (
 	<Router>
 		<Switch>
