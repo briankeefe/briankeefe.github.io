@@ -39,7 +39,6 @@ function App() {
 							See Work
 						</Button>
 					</Link>
-
 					<Grid item xs={10} sm={8} md={6} lg={4}>
 						<Typography variant="h5" className="white-text about-text cascadia">
 							"Highly motivated developer focused on ReactJS, .NET, and full
