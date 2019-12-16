@@ -23,15 +23,19 @@ function App() {
 			<Box className="outer">
 				<Grid container justify="center" direction="column" alignItems="center">
 					<Box className="bk-box">
-						<Typography className="cascadia" id="brian-keefe" variant="h1">
+						<Typography
+							className="cascadia brian-keefe"
+							id="brian-keefe"
+							variant="h1"
+						>
 							Brian Keefe
 						</Typography>
 					</Box>
 
-					<Typography className="cascadia margin-top" variant="h5">
+					<Typography className="cascadia margin-top shadowed" variant="h5">
 						Junior Developer
 					</Typography>
-					<Typography className="cascadia" variant="p">
+					<Typography className="cascadia shadowed" variant="p">
 						Staples INC., Framingham MA
 					</Typography>
 					<Link className="link" to="/projects">
@@ -40,7 +44,10 @@ function App() {
 						</Button>
 					</Link>
 					<Grid item xs={10} sm={8} md={6} lg={4}>
-						<Typography variant="h5" className="white-text about-text cascadia">
+						<Typography
+							variant="h5"
+							className="brian-keefe white-text about-text cascadia"
+						>
 							"Highly motivated developer focused on ReactJS, .NET, and full
 							stack solutions"
 						</Typography>
