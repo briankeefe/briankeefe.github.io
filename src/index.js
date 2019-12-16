@@ -3,17 +3,17 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
-import { Route, Link, BrowserRouter as Router } from "react-router-dom";
+import { Route, Switch, HashRouter as Router } from "react-router-dom";
 import CopyApp from "./CopyApp.js";
 import Projects from "./Projects.js";
 import About from "./About.js";
 const routing = (
 	<Router>
-		<div>
+		<Switch>
 			<Route exact path="/" component={App} />
 			<Route path="/about" component={About} />
 			<Route path="/projects" component={Projects} />
-		</div>
+		</Switch>
 	</Router>
 );
 
