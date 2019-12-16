@@ -9,7 +9,6 @@
 		"@testing-library/react": "^9.3.2",
 		"@testing-library/user-event": "^7.1.2",
 		"css-loader": "^3.3.2",
-		"gh-pages": "^2.1.1",
 		"loader": "^2.1.1",
 		"node-sass": "^4.13.0",
 		"prettier": "^1.19.1",
