@@ -22,9 +22,12 @@ function App() {
 			<TopBar />
 			<Box className="outer">
 				<Grid container justify="center" direction="column" alignItems="center">
-					<Typography className="cascadia" id="brian-keefe" variant="h2">
-						Brian Keefe
-					</Typography>
+					<Box className="bk-box">
+						<Typography className="cascadia" id="brian-keefe" variant="h1">
+							Brian Keefe
+						</Typography>
+					</Box>
+
 					<Typography className="cascadia margin-top" variant="h5">
 						Junior Developer
 					</Typography>

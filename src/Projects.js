@@ -23,7 +23,9 @@ let ProjectPage = () => {
 							<Card className="project-card">
 								<CardContent className="box">
 									<Box pr={4}>
-										<Typography variant="h4">{e.name}</Typography>
+										<Typography className="cascadia" variant="h4">
+											{e.name}
+										</Typography>
 										<Typography style={{ marginTop: "8px" }} variant="body1">
 											Technology Used: <b>{e.tech}</b>
 										</Typography>

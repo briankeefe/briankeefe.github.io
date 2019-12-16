@@ -18,7 +18,7 @@ let AboutPage = () => {
 							About me
 						</Typography>
 					</Grid>
-					<Grid item xs={4}>
+					<Grid item xs={12} md={4}>
 						<Card>
 							<CardContent>
 								<Typography variant="h5">Education</Typography>
@@ -28,8 +28,21 @@ let AboutPage = () => {
 								<Typography variant="body1">Graduating Class: 2020</Typography>
 							</CardContent>
 						</Card>
+						<Card style={{ marginTop: "16px" }}>
+							<CardContent>
+								<Grid container justify="center" alignItems="center">
+									<Box
+										style={{
+											backgroundColor: "black",
+											height: "200px",
+											width: "200px"
+										}}
+									></Box>
+								</Grid>
+							</CardContent>
+						</Card>
 					</Grid>
-					<Grid item xs={8}>
+					<Grid item xs={12} md={8}>
 						<Card>
 							<CardContent>
 								<Typography variant="h5"> Professional Experience</Typography>

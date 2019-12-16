@@ -1,16 +1,11 @@
 .home-page {
-	height: 100vh;
+	min-height: 100vh;
 	width: 100vw;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
 	.outer {
-		padding: 16px;
-		.MuiPaper-root {
-			height: 90vh;
-			width: 100%;
-		}
-		padding-top: 96px;
+		padding-top: 48px;
 	}
 
 	#work-button {
@@ -39,6 +34,19 @@
 	}
 	.MuiButtonGroup-groupedText {
 		border-color: white !important;
+	}
+
+	.shadowed {
+		text-shadow: white 0px 0px 2px;
+	}
+
+	#brian-keefe {
+		// text-shadow: white 0px 0px 4px;
+		opacity: 100%;
+		mix-blend-mode: screen;
+		background-color: white;
+		color: black !important;
+		opacity: 70%;
 	}
 }
 
