@@ -18,7 +18,7 @@ let projectContent = [
 		desc:
 			"Samples from Project Euler and other practice coding lists.  Used as a way to develop consistent formatting and practice core concepts",
 		tech: "Python, Javascript",
-		link: "http://github.com/briankeefe/SampleCoding"
+		link: "http://github.com/briankeefe/Sampleboding"
 	}
 ];
 
