@@ -76,10 +76,12 @@
 			color: black;
 		}
 	}
+	.src-button {
+		float: right;
+	}
 
-	.slick-next:before,
-	.slick-prev:before {
-		color: #000;
+	.card-actions {
+		justify-content: right;
 	}
 }
 
@@ -87,7 +89,6 @@
 	margin-top: 16px;
 	margin-bottom: 16px;
 	flex-grow: 1;
-	min-height: 40vh;
 	display: block;
 	.box {
 		flex-grow: 1;
@@ -103,5 +104,8 @@
 .cascadia {
 	color: black;
 	font-family: "Cascadia" !important;
+}
+
+.center {
 	text-align: center;
 }
