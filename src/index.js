@@ -8,12 +8,14 @@ import CopyApp from "./CopyApp.js";
 import Projects from "./Projects.js";
 import About from "./About.js";
 import "./fonts/Cascadia.ttf";
+import TerpTimer from "./terpTimer";
 const routing = (
 	<Router>
 		<Switch>
 			<Route exact path="/" component={App} />
 			<Route path="/about" component={About} />
 			<Route path="/projects" component={Projects} />
+			<Route path="/isobytedev/terptimer/privacyPolicy" component={TerpTimer} />
 		</Switch>
 	</Router>
 );
