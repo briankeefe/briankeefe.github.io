@@ -1,5 +1,10 @@
 let internships = [
 	{
+		name: "Staples, Framingham MA (remote)",
+		position: "Rotational Software Developer (Level 1)",
+		desc: "Operated as a Level 1 Software Developer on the Identity and Access Management Team.  Responsibilities included developing intuitive and extendable front-end components, and integrating them with corresponding endpoints and payloads.  I then learned to initiate and merge pull requests from feature branches and deploy to testing environments through Jenkins pipelines.  I presented deliverable changes in demo’s with upper management, and was able to effectively communicate the benefit to the business."
+	},
+	{
 		name: "Optum, Boston MA",
 		position: "Software Engineering Intern (Full Stack)",
 		desc:
@@ -10,12 +15,6 @@ let internships = [
 		position: "Software Engineering Intern (DevOps)",
 		desc:
 			"Worked alongside full time developers as the sole summer intern of the Retail Technology Development Team. Was introduced to an agile project management environment and learned several key skills necessary to address technical issues and implement solutions. Met with colleagues daily in different environments to effectively communicate progress while setting and understanding personal and team goals. Documented my work to be replicated by colleagues and trained members of other trains on proper implementation."
-	},
-	{
-		name: "Sunshine Systems, Southborough MA",
-		position: "Software Engineering Intern (Backend)",
-		desc:
-			"Analyzed a predated time-punch program written in Visual Basic and built a new system in Java. Trained on proper programming techniques while simultaneously learning both programming languages by exploring and utilizing resources such as books, texts, and tutorials. "
 	}
 ];
 

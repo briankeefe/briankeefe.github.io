@@ -14,11 +14,11 @@ let projectContent = [
 		link: "http://github.com/briankeefe/Snowday"
 	},
 	{
-		name: "Sample Coding",
+		name: "Static Restaurant Menu Generator",
 		desc:
-			"Samples from Project Euler and other practice coding lists.  Used as a way to develop consistent formatting and practice core concepts",
-		tech: "Python, Javascript",
-		link: "http://github.com/briankeefe/Sampleboding"
+			"Takes in a json of menu items and generates a MaterialUI themed page.  Example shown in link",
+		tech: "React",
+		link: "http://briankeefe.github.io/#/Willikers"
 	}
 ];
 

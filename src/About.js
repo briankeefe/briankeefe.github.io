@@ -4,12 +4,13 @@ import { blue } from "@material-ui/core/colors";
 import TopBar from "./layout/TopBar";
 import internships from "./content/internships";
 import Profile from "./images/Burger.jpg";
+import colors from "./content/colors";
 let AboutPage = () => {
 	return (
-		<Box className="about-page" style={{ backgroundColor: blue[50] }}>
+		<Box className="about-page" style={{ backgroundColor: `${colors.light}` }}>
 			<TopBar />
 			<Box p={2}>
-				<Grid container spacing={2} justify="center">
+				<Grid container spacing={2} justify="flex-end">
 					<Grid item xs={12}>
 						<Typography
 							className="cascadia"
@@ -26,26 +27,30 @@ let AboutPage = () => {
 								<Typography variant="body1">
 									University of Massachusetts Amherst
 								</Typography>
-								<Typography variant="body1">Graduating Class: 2020</Typography>
+								<Typography variant="body1">Graduated 2020</Typography>
 							</CardContent>
 						</Card>
-						<Card style={{ marginTop: "16px" }}>
-							<CardContent>
-								<Grid container justify="center" alignItems="center">
-									<Box
-										style={{
-											height: "200px",
-											width: "200px"
-										}}
-									>
-										<img
-											style={{ height: "inherit", width: "inherit" }}
-											src={Profile}
-										/>
-									</Box>
-								</Grid>
-							</CardContent>
-						</Card>
+						<Box style={{ width: 'inherit', overflow: 'hidden' }}>
+							<Card style={{
+								marginTop: "16px",
+								width: 'inherit',
+								float: 'right'
+							}}>
+								<Box
+									style={{
+										height: "400px",
+										width: "inherit",
+										float: "right",
+										overflow: 'hidden',
+									}}
+								>
+									<img
+										style={{ height: "inherit", width: "inherit" }}
+										src={Profile}
+									/>
+								</Box>
+							</Card>
+						</Box>
 					</Grid>
 					<Grid item xs={12} md={8}>
 						<Card>

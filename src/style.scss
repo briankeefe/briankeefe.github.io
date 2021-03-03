@@ -11,7 +11,7 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 	.outer {
-		padding-top: 48px;
+		padding-top: 80px;
 	}
 
 	#work-button {
@@ -36,15 +36,16 @@
 	.AppBar {
 		.MuiButton-root {
 			color: white;
+			z-index: 10;
 		}
 	}
 	.MuiButtonGroup-groupedText {
 		border-color: white !important;
 	}
 
-	.shadowed {
-		text-shadow: white 0px 0px 4px;
-	}
+	// .shadowed {
+	// 	text-shadow: white 0px 0px 4px;
+	// }
 
 	.brian-keefe {
 		mix-blend-mode: screen;
@@ -108,4 +109,22 @@
 
 .center {
 	text-align: center;
+}
+
+.skewed {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	width: 100%;
+	height: 20%;
+	background: #002171;
+	z-index: 0;
+	transform: skewY(-2deg);
+	transform-origin: top left;
+}
+
+.AppBar {
+	padding-top: 10px;
 }

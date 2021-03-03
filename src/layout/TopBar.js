@@ -10,6 +10,11 @@ import {
 	ButtonGroup
 } from "@material-ui/core";
 import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faHome } from "@fortawesome/free-solid-svg-icons";
+import { faUser } from "@fortawesome/free-solid-svg-icons";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faBriefcase } from "@fortawesome/free-solid-svg-icons"
 
 let TopBar = () => {
 	return (
@@ -18,16 +23,25 @@ let TopBar = () => {
 				<Box style={{ flexGrow: "1" }} />
 				<ButtonGroup id="buttons" variant="text">
 					<Link className="link" to="/">
-						<Button>Home</Button>
+						<Button>
+							<FontAwesomeIcon size="2x" icon={faHome}/>
+						</Button>
 					</Link>
 					<Link className="link" to="/about">
-						<Button>About</Button>
+						<Button>
+							<FontAwesomeIcon size="2x" icon={faUser}/>
+						</Button>
 					</Link>
-					<Button href="http://www.github.com/briankeefe">Github</Button>
+					<Button href="http://www.github.com/briankeefe">
+						<FontAwesomeIcon size="2x" icon={faGithub}/>
+					</Button>
 					<Link className="link" to="/projects">
-						<Button>Projects</Button>
+						<Button>
+							<FontAwesomeIcon size="2x" icon={faBriefcase} />
+						</Button>
 					</Link>
 				</ButtonGroup>
+
 			</Toolbar>
 		</AppBar>
 	);

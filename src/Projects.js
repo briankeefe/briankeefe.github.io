@@ -21,14 +21,13 @@ let ProjectPage = () => {
 			<TopBar />
 			{ProjectContent.map(e => {
 				return (
-					<Grid container justify="center">
+					<Grid key={-1} container justify="center">
 						<Grid item xs={12} md={6}>
 							<Card style={{ display: "relative" }} className="project-card">
-								<CardContent className="card-content" className="box">
+								<CardContent className="card-content box">
 									<Box pr={4}>
 										<Typography
-											className="card-title"
-											className="cascadia"
+											className="card-title cascadia"
 											variant="h4"
 										>
 											{e.name}
@@ -48,7 +47,7 @@ let ProjectPage = () => {
 											className="src-button"
 											href={e.link}
 										>
-											Source Code
+											Source
 										</Button>
 									</Box>
 								</CardActions>
