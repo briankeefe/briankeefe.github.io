@@ -3,7 +3,18 @@
 	src: local("Cascadia Code"), local("Cascadia"), local("CascadiaCode"),
 		url("./fonts/Cascadia.ttf") format("truetype");
 }
-
+@font-face {
+	font-family: "OpenSansCondensed-Light";
+	src: local("Open Sans Condensed Light"), url("./fonts/OpenSansCondensed-Light.ttf") format("truetype");
+}
+@font-face {
+	font-family: "HindSiliguri-Medium";
+	src: local("Hind Siliguri Medium"), url("./fonts/HindSiliguri-Medium.ttf") format("truetype");
+}
+@font-face {
+	font-family: "HindSiliguri-Regular";
+	src: local("Hind Siliguri Regular"), url("./fonts/HindSiliguri-Regular.ttf") format("truetype");
+}
 .home-page {
 	min-height: 100vh;
 	width: 100vw;

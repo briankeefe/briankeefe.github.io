@@ -7,11 +7,11 @@ import Paper from '@material-ui/core/Paper';
 import Box from '@material-ui/core/Box';
 import { makeStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
-import menu from '../src/willikersData';
+import menu from './firstHouseData.js';
 // import Icon from "../public/.svg";
 
-const PRIMARY = '#c62828';
-const LIGHT = '#d15353';
+const PRIMARY = '#D4B687';
+const LIGHT = '#D4B687';
 
 const useStyles = makeStyles((theme) => ({
     customImage: {
@@ -57,9 +57,23 @@ const useStyles = makeStyles((theme) => ({
         fill: PRIMARY,
     },
     title: {
-        fontFamily: 'Times',
+        fontFamily: 'HindSiliguri-Medium',
+        fontSize: '16px'
+    },
+    heading: {
+        fontFamily: 'HindSiliguri-Medium'
+    },
+    paragraph: {
+        fontFamily: 'OpenSansCondensed-Light',
+        marginBlockStart: 0,
+        marginBlockEnd: 0,
+        fontSize: '1.1em'
     },
 }));
+
+function formatPrice(price) {
+    return price && parseFloat(price).toFixed(2);
+}
 
 export default function Menu() {
     const classes = useStyles();
@@ -70,7 +84,7 @@ export default function Menu() {
             <div
                 style={{
                     backgroundColor: PRIMARY,
-                    height: '35vh',
+                    height: '40vh',
                     display: 'flex',
                     alignItems: 'center',
                     justifyContent: 'center',
@@ -85,29 +99,29 @@ export default function Menu() {
                     <Typography
                         align="center"
                         style={{ width: '100%' }}
-                        className={classes.title}
+                        className={classes.heading}
                         variant="h2"
                     >
                         {menu.xname}
+                    </Typography>
+                    <Typography
+                        align="center"
+                        style={{ width: '100%' }}
+                        className={classes.heading}
+                        variant="h5"
+                    >
+                        {menu.xnumber}
+                    </Typography>
+                    {menu.xaddress && <Box>
                         <Typography
                             align="center"
                             style={{ width: '100%' }}
-                            className={classes.title}
+                            className={classes.heading}
                             variant="h5"
                         >
-                            {menu.xnumber}
+                            {menu.xaddress}
                         </Typography>
-          </Typography>
-                    <div style={{ display: 'flex', alignItems: 'center' }}>
-                        <Typography
-                            align="center"
-                            style={{ width: '100%' }}
-                            className={classes.title}
-                            variant="h5"
-                        >
-                            {menu.xhours}
-                        </Typography>
-                    </div>
+                    </Box>}
                 </div>
             </div>
             <div className={classes.customShapeDividerBottom}>
@@ -129,9 +143,9 @@ export default function Menu() {
                     <Box itemRef={myRef} p={3}>
                         {Object.entries(menu).map((obj) => {
                             let [name, foods] = obj;
-                            if(name.includes('_'))
+                            if (name.includes('_'))
                                 name = name.replace('_', ' ');
-                            else if(name.substring(0,1) === 'x')
+                            else if (name.substring(0, 1) === 'x')
                                 return;
                             foods.sort((a, b) => a.name.localeCompare(b.name));
                             return (
@@ -139,19 +153,20 @@ export default function Menu() {
                                     <Box my={3}>
                                         <Typography
                                             align="center"
+                                            className={classes.heading}
                                             style={{
                                                 color: PRIMARY,
                                                 borderBottom: '1px solid',
                                                 borderColor: PRIMARY,
                                             }}
-                                            variant="h5"
+                                            variant="h4"
                                         >
                                             {name}
                                         </Typography>
                                     </Box>
                                     <Grid container>
                                         {foods.map((item) => {
-                                            const { name, price, desc } = item;
+                                            const { name, price, desc, options } = item;
                                             return (
                                                 <Grid key="2" item xs={12} sm={6} md={4}>
                                                     <Box m={1}>
@@ -162,10 +177,8 @@ export default function Menu() {
                                                                     display="inline"
                                                                 >
                                                                     <Typography
+                                                                        className={classes.title}
                                                                         display="inline"
-                                                                        style={{
-                                                                            fontSize: '14px',
-                                                                        }}
                                                                     >
                                                                         <strong>{name}</strong>
                                                                     </Typography>
@@ -175,18 +188,32 @@ export default function Menu() {
                                                                     display="inline"
                                                                     style={{ float: 'right' }}
                                                                 >
-                                                                    <Typography display="inline">
-                                                                        {price}
+                                                                    <Typography className={classes.title} display="inline">
+                                                                        {formatPrice(price)}
                                                                     </Typography>
                                                                 </Box>
                                                                 <Box component="div">
                                                                     <Typography
+                                                                        className={classes.paragraph}
                                                                         variant="subtitle2"
                                                                         display="inline"
                                                                     >
                                                                         {desc}
                                                                     </Typography>
                                                                 </Box>
+                                                                {options && options.map((option, key) =>
+                                                                    <Box key={key} component="div">
+                                                                        <Typography
+                                                                            className={classes.paragraph}
+                                                                            variant="subtitle2"
+                                                                            display="inline"
+                                                                        >
+                                                                            <b>{option.name}</b>
+                                                                        </Typography>
+                                                                        <div className={classes.paragraph} style={{ float: "right" }}>
+                                                                            {formatPrice(option.price)}
+                                                                        </div>
+                                                                    </Box>)}
                                                             </Box>
                                                         </Card>
                                                     </Box>
@@ -198,6 +225,38 @@ export default function Menu() {
                             );
                         })}
                     </Box>
+                    <div style={{ alignItems: 'center', marginBottom: '3em' }}>
+                        <Box p={2} style={{ marginBottom: '2em' }}>
+                            <Typography
+                                align="center"
+                                style={{ width: '100%' }}
+                                className={classes.title}
+                                variant="h4"
+                            >
+                                {menu.xDisclaimer}
+                            </Typography>
+                        </Box>
+                        <Box>
+                            <Typography
+                                align="center"
+                                style={{ width: '100%' }}
+                                className={classes.title}
+                                variant="h4"
+                            >
+                                Hours:
+                            </Typography>
+                        </Box>
+                        <Box>
+                            <Typography
+                                align="center"
+                                style={{ width: '100%' }}
+                                className={classes.title}
+                                variant="h5"
+                            >
+                                {menu.xhours.split('\n').map((str, key) => (<p className={classes.title} key={key}>{str}</p>))}
+                            </Typography>
+                        </Box>
+                    </div>
                 </Grid>
             </Grid>
         </Box>

@@ -8,7 +8,9 @@ import CopyApp from "./CopyApp.js";
 import Projects from "./Projects.js";
 import About from "./About.js";
 import "./fonts/Cascadia.ttf";
+import "./fonts/OpenSansCondensed-Light.ttf"
 import Willikers from "./Willikers";
+import FirstHousePub from "./FirstHousePub";
 const routing = (
 	<Router>
 		<Switch>
@@ -16,6 +18,7 @@ const routing = (
 			<Route path="/about" component={About} />
 			<Route path="/projects" component={Projects} />
 			<Route path="/Willikers" component={Willikers} />
+			<Route path="/firstHouse" component={FirstHousePub} />
 		</Switch>
 	</Router>
 );

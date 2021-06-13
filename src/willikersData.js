@@ -1,4 +1,7 @@
 export default {
+	xname: "Willikers",
+	xnumber: "(508) 842-3030",
+	xhours: "Hours: 11:30am - 2:00am",
 	Starters: [
 		{
 			name: "Queso Dip",
